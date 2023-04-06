@@ -11,6 +11,8 @@
 		7E272CA629DF3A4F00F02A80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E272CA529DF3A4F00F02A80 /* ContentView.swift */; };
 		7E272CA829DF3A4F00F02A80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E272CA729DF3A4F00F02A80 /* Assets.xcassets */; };
 		7E272CAB29DF3A4F00F02A80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E272CAA29DF3A4F00F02A80 /* Preview Assets.xcassets */; };
+		7E272CB529DF3EF400F02A80 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E272CB429DF3EF400F02A80 /* MainViewModel.swift */; };
+		7E272CB729DF4E6400F02A80 /* RepeatingTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E272CB629DF4E6400F02A80 /* RepeatingTimer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		7E272CA729DF3A4F00F02A80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E272CAA29DF3A4F00F02A80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7E272CAC29DF3A4F00F02A80 /* StringDeviceSimulator.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = StringDeviceSimulator.entitlements; sourceTree = "<group>"; };
+		7E272CB429DF3EF400F02A80 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		7E272CB629DF4E6400F02A80 /* RepeatingTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 			children = (
 				7E272CA329DF3A4F00F02A80 /* StringDeviceSimulatorApp.swift */,
 				7E272CA529DF3A4F00F02A80 /* ContentView.swift */,
+				7E272CB429DF3EF400F02A80 /* MainViewModel.swift */,
+				7E272CB629DF4E6400F02A80 /* RepeatingTimer.swift */,
 				7E272CA729DF3A4F00F02A80 /* Assets.xcassets */,
 				7E272CAC29DF3A4F00F02A80 /* StringDeviceSimulator.entitlements */,
 				7E272CA929DF3A4F00F02A80 /* Preview Content */,
@@ -141,6 +147,8 @@
 			files = (
 				7E272CA629DF3A4F00F02A80 /* ContentView.swift in Sources */,
 				7E272CA429DF3A4F00F02A80 /* StringDeviceSimulatorApp.swift in Sources */,
+				7E272CB529DF3EF400F02A80 /* MainViewModel.swift in Sources */,
+				7E272CB729DF4E6400F02A80 /* RepeatingTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +282,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is used to accept connections and send data";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth is used to accept connections and send data";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,6 +311,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Bluetooth is used to accept connections and send data";
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = "Bluetooth is used to accept connections and send data";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
