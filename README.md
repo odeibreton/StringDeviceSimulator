@@ -23,7 +23,7 @@ After this, the readings must be sent to the API (there is no API, so this call 
 
 ## Goals
 ⭐️
-- Complete user journey by allowing the user to select the exercise, input the weight, perform the exercise and how how many readings were received
+- Complete the user journey by allowing the user to select the exercise, input the weight, perform the exercise and how many readings were received
 
 ⭐️⭐️
 - Send the recorded data to the API
@@ -33,21 +33,21 @@ After this, the readings must be sent to the API (there is no API, so this call 
 - Implement a retry mechanism to make sure the data reaches the API if the app is not connected to the internet
 
 ## What we'll look into
-We will look into the candidate's problem solving abilities and coding practices.
+We will look into the candidate's problem-solving abilities and coding practices.
 
-It's okay if the app doesn't fully work, or if there's a few bugs, the most important part is to see the intent and reasoning behind the code, and to be able to talk through the solution.
+It's okay if the app doesn't fully work, or if there are a few bugs, the most important part is to see the intent and reasoning behind the code and to be able to talk through the solution.
 
 Automated testing is not required, but it is desirable. If automated testing is implemented, 100% coverage is not required. We'd rather see a few tests covering the most important parts of the app, rather than many tests trying to cover absolutely everything. Less is more.
 
 ## What we'll NOT look into
-As this app is more about the communication and logic side of things, we will not pay very close attention to the UI. Well structured views are a nice to have, but don't sacrifice time into creating the most perfect UI for the project.
+As this app is more about the communication and logic side of things, we will not pay very close attention to the UI. Well-structured views are nice to have but don't sacrifice time into creating the most perfect UI for the project.
 
-We won't look into how long it takes to complete the test (within reason). We estimate that this test can be completed confortabily within a week, probably less. There is no need to rush, take your time.
+We won't look into how long it takes to complete the test (within reason). We estimate that this test can be completed comfortably within a week, probably less. There is no need to rush, take your time.
 
 We won't look into the deployment, monitoring or infrastructure.
 
 # Simulator documentation
-The string device simulator is designed to act like one of our real devices. It can receive a message to start and stop recording, and when the device is recording, it will start sending random number to the BLE client.
+The string device simulator is designed to act like one of our real devices. It can receive a message to start and stop recording, and when the device is recording, it will start sending random numbers to the BLE client.
 
 ## BLE Spec
 The simulator exposes one BLE service with the ID `2cdaa35b-be1e-40d4-aba0-3add764a6a8b`.
@@ -63,7 +63,7 @@ When the written value is `0x01`, the simulator will start recording (and sendin
 
 ### ReadingsCharacteristic
 **ID**: `85844cc1-2eac-4744-9b9d-462cfd8debd1`
-This characteristic is used to transfer readings from the simulator to the app. The app can't write to this property, but can subscribe to notifications.
+This characteristic is used to transfer readings from the simulator to the app. The app can't write to this property but can subscribe to notifications.
 
 The simulator will write random `UInt64` values at 100Hz (100 times per second, every 10ms).
 
