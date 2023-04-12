@@ -63,7 +63,7 @@ When the written value is `0x01`, the simulator will start recording (and sendin
 ### ReadingsCharacteristic
 **ID**: `85844cc1-2eac-4744-9b9d-462cfd8debd1`
 
-This characteristic is used to transfer readings from the simulator to the app. The app can't write to this property but can subscribe to notifications.
+This characteristic is used to transfer readings from the simulator to the app. The app can't write to this characteristic but can subscribe to notifications.
 
 The simulator will write random `UInt64` values at 100Hz (100 times per second, every 10ms).
 
