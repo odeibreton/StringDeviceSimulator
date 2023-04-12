@@ -1,5 +1,5 @@
 # Stance test
-We want to create an app that allows a user to exercise with a Stance device. The user will be able to select an exercise (Bench press, squat or deadlift) and weight before starting the exercise.
+We want to create an app that allows a user to exercise with a Stance device (string device). The user will be able to select an exercise (Bench press, squat or deadlift) and weight before starting the exercise.
 
 When the user wants to start the exercise, they will press a button in the app, and the app will communicate with the string device to start recording data.
 
@@ -26,7 +26,7 @@ After this, the readings must be sent to the API (there is no API, so this call 
 - Complete the user journey by allowing the user to select the exercise, input the weight, perform the exercise and how many readings were received
 
 ⭐️⭐️
-- Send the recorded data to the API
+- Send the recorded data to the API (readings and other data like exercise name and weight)
 - Store the recorded data locally for future processing (including the exercise name and weight)
 
 ⭐️⭐️⭐️
