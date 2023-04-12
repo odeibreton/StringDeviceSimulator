@@ -1,5 +1,5 @@
 # Stance test
-We want to create an app that allows a user to exercise with a Stance device. The user will be able to select an exercise (Bench press, squat...) and weight before starting the exercise.
+We want to create an app that allows a user to exercise with a Stance device. The user will be able to select an exercise (Bench press, squat or deadlift) and weight before starting the exercise.
 
 When the user wants to start the exercise, they will press a button in the app, and the app will communicate with the string device to start recording data.
 
