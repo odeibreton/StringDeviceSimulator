@@ -51,7 +51,7 @@ The string device simulator is designed to act like one of our real devices. It 
 The simulator exposes one BLE service with the ID `2cdaa35b-be1e-40d4-aba0-3add764a6a8b`.
 This service has two characteristics:
 
-### IsReadingCharacteristic
+### IsRecordingCharacteristic
 **ID**: `69872099-e938-4e1e-99c4-74afc913d553`
 
 This characteristic is used for the app to indicate when to start and stop recording.
