@@ -42,8 +42,6 @@ Automated testing is not required, but it is desirable. If automated testing is 
 ## What we'll NOT look into
 As this app is more about the communication and logic side of things, we will not pay very close attention to the UI. Well-structured views are nice to have but don't sacrifice time into creating the most perfect UI for the project.
 
-We won't look into how long it takes to complete the test (within reason). We estimate that this test can be completed comfortably within a week, probably less. There is no need to rush, take your time.
-
 We won't look into the deployment, monitoring or infrastructure.
 
 # Simulator documentation
@@ -55,6 +53,7 @@ This service has two characteristics:
 
 ### IsReadingCharacteristic
 **ID**: `69872099-e938-4e1e-99c4-74afc913d553`
+
 This characteristic is used for the app to indicate when to start and stop recording.
 
 The app can write a value into the characteristic, and there are only two possible values: `0x00` and `0x01` (hex notation). The simulator will only accept values that are one byte long.
@@ -63,6 +62,7 @@ When the written value is `0x01`, the simulator will start recording (and sendin
 
 ### ReadingsCharacteristic
 **ID**: `85844cc1-2eac-4744-9b9d-462cfd8debd1`
+
 This characteristic is used to transfer readings from the simulator to the app. The app can't write to this property but can subscribe to notifications.
 
 The simulator will write random `UInt64` values at 100Hz (100 times per second, every 10ms).
