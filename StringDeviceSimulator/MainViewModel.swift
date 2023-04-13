@@ -38,7 +38,7 @@ class MainViewModel : NSObject, ObservableObject {
     }
     
     func startAdvertising() {
-        peripheralManager.startAdvertising(nil)
+        peripheralManager.startAdvertising([CBAdvertisementDataServiceUUIDsKey: [serviceId]])
     }
     
     func stopAdvertising() {
