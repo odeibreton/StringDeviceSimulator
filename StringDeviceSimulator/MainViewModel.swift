@@ -28,7 +28,7 @@ class MainViewModel : NSObject, ObservableObject {
     
     override init() {
         readingsCharacteristic = CBMutableCharacteristic(type: readingsCharacteristicId, properties: .notify, value: nil, permissions: .readable)
-        isRecordingCharacteristic = CBMutableCharacteristic(type: isRecordingCharacteristicId, properties: .write, value: nil, permissions: .writeable)
+        isRecordingCharacteristic = CBMutableCharacteristic(type: isRecordingCharacteristicId, properties: .writeWithoutResponse, value: nil, permissions: .writeable)
         
         super.init()
         
